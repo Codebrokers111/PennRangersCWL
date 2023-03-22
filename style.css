@@ -8,6 +8,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 .navbar{
@@ -223,6 +224,26 @@ h4{
   color: #cccccc;
 }
 
+/*TABLE*/
+.table tbody tr td input{
+  width: 40px;
+  text-align: right;
+}
+.table tbody tr td{
+  vertical-align: middle;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout:fixed;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
 
 #footer{
@@ -259,3 +280,15 @@ h4{
   margin: 0;
 }
 
+@media screen and (min-width: 601px) {
+  p.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  table td p.example {
+    font-size: 30px;
+  }
+}
